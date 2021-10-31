@@ -11,13 +11,202 @@
 
 
 /*------tablet view-------*/
-@media only screen and (min-width: 768px){
+@media only screen and (max-width: 1024px){
+ /*-----top section------*/
+ .top-section{
+    display: grid;
+    grid-template-areas: 
+    "nav nav nav nav photo photo"
+    "logo logo logo logo photo photo"
+    "intro intro intro intro photo photo"
+    "topbuttons topbuttons topbuttons topbuttons photo photo"
+    "blank blank name name photo photo"
+    "blank blank title title photo photo";
+    background-image: url(./images/house.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: -50px;
+}
+
+#gary-photo{
+    width: 400px;
+    float: right;
+}
+.logo img{
+    width: 500px;
+    margin-left: 100px;
+}
+
+.nav{
+    width: 75%;
+}
+.nav-container{
+    width: 100%;
+    padding: 20px;
+    margin-left: 60px;
+}
+.nav-container li{
+    display: inline;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+.intro p{
+    margin: 0 100px 0 60px;
+    padding: 0 150px 0 50px;
+}
+
+.top-buttons{
+    display: inline-flex;
+    margin-left: 80px;
+    padding-left: 10px;
+    width: 100%;
+}
+.call-me button, .quote button{    
+    font-size: 16px;
+    width: 150px;
+    text-align: left;
+    outline: none;
+}
+.call-me button{
+    border: none;
+    background-color: #009DDB;
+    color: white;
+    margin: 20px;
+    padding: 10px 0px 10px 20px;
+}
+.call-me button a{
+    color: white;
+    padding-right: 20px;
+}
+.call-me button a:hover{
+    color: white;
+}
+
+.quote button{
+    border: 1px solid #009DDB;
+    background-color: white;
+    color: #009DDB;
+    margin: 20px 0;
+    padding: 10px 0px 10px 40px;
+}
+.quote button a{
+    color: #009DDB;
+    padding-right: 20px;
+    margin-left: -20px;
+    text-align: left;
+}
+.quote button a:hover{
+    color:#009DDB;
+}
+.name{
+    font-size: 32px;
+    text-align: right;
+    padding-right: 10px;
+    margin: 0;
+}
+.title{
+    margin: 0;
+    padding-right: 10px;
+    margin-top: -30px;
+    font-size: 20px;
+    color: #b0b0b0;
+}
+
+/*-------appraisal experts section------*/
+.appraisal-experts{
+    margin: 0;
+    padding: 15px 210px 40px 110px ;
+    color: white;
+}
+.experts-title{
+    font-size: 24px;
+}
+.experts-text{
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+/*--------services/coverage areas---------*/
+.service-coverage{
+    margin: 0;
+    padding: 15px 80px 20px;
+}
+.service-title{
+    font-size: 24px;
+    color: #009DDB;
+    margin-left: 35px;
+}
+.services{
+    display: flex;
+    margin: 20px 60px;
+}
+.mid-title{
+    font-size: 24px;
+    color: #009DDB;
+    font-weight: normal;
+}
+.service-text{
+    margin: 0 40px;
+}
+.coverage{
+    /* display: block; */
+    margin-left: 40px;
+    margin-top: 70px;
+    line-height: .5;
+}
+
+.icon img{
+    max-width: 55px;
+}
+
+hr{
+    border-top: 2px solid #009DDB;
+}
+
+/*---------footer--------*/
+.footer{
+    display: grid;
+    grid-template-areas: 
+    "logo bottomname"
+    "text blank"
+    "quote contact";
+    background-image: url(./images/house.png);
+    background-repeat: no-repeat;
+    background-size: 45%;
+    background-position-x: 900px;
+    margin: 0;
+    padding: 80px 60px 30px 20px;
+}
+.bottom-name{
+    color: #009DDB;
+    font-size: 32px;
+    padding-top: 25px;
+}
+.logo{
+    margin-bottom: 0;
+}
+
+.text p{
+    padding: 40px 40px 0 105px;
+    width: 55%;
+}
+.contact-info{
+    line-height: 1;
+    padding-top: 25px;
+    margin-right: 110px;
+}
+.footer > .quote{
+    margin-left: 65px;
+    margin-top: -65px;
+    padding-left: 40px;
+}
 
 }
 
 
 /*------desktop view-------*/
-@media only screen and (min-width: 1024px){
+@media only screen and (min-width: 1025px){
     /*-----top section------*/
     .top-section{
         display: grid;
@@ -30,17 +219,19 @@
         "blank blank title title photo photo";
         background-image: url(./images/house.png);
         background-repeat: no-repeat;
-        background-size: 50%;
-        background-position-x: -50px;
+        /* background-size: 55%; */
+        background-position-x: -95px;
+        background-position-y: 35px;
+        background-size: 65% 95%;
     }
    
     #gary-photo{
-        width: 400px;
+        width: 450px;
         float: right;
     }
     .logo img{
-        width: 500px;
-        margin-left: 100px;
+        width: 550px;
+        margin-left: 135px;
     }
 
     .nav{
@@ -48,8 +239,12 @@
     }
     .nav-container{
         width: 100%;
-        padding: 20px;
-        margin-left: 60px;
+        padding: 15px 40px 20px;
+        margin-left: 70px;
+        margin-bottom: 65px;
+    }
+    .nav-container a{
+        color: black;
     }
     .nav-container li{
         display: inline;
@@ -58,14 +253,15 @@
     }
 
     .intro p{
-        margin: 0 100px 0 60px;
         padding: 0 150px 0 50px;
+        width: 70%;
+        margin-left: 95px;
     }
 
     .top-buttons{
         display: inline-flex;
-        margin-left: 80px;
-        padding-left: 10px;
+        margin-left: 100px;
+        padding-left: 25px;
         width: 100%;
     }
     .call-me button, .quote button{    
@@ -94,7 +290,7 @@
         background-color: white;
         color: #009DDB;
         margin: 20px 0;
-        padding: 10px 0px 10px 40px;
+        padding: 7px 0px 10px 40px;
     }
     .quote button a{
         color: #009DDB;
@@ -110,18 +306,20 @@
         text-align: right;
         padding-right: 10px;
         margin: 0;
+        line-height: 2;
     }
     .title{
         margin: 0;
         padding-right: 10px;
         margin-top: -30px;
-        font-size: 24px;
+        font-size: 20px;
+        color: #b0b0b0;
     }
 
     /*-------appraisal experts section------*/
     .appraisal-experts{
         margin: 0;
-        padding: 15px 210px 40px 110px ;
+        padding: 15px 210px 40px 150px ;
         color: white;
     }
     .experts-title{
@@ -140,26 +338,36 @@
     .service-title{
         font-size: 24px;
         color: #009DDB;
-        margin-left: 35px;
+        margin-left: 65px;
     }
     .services{
         display: flex;
-        margin: 20px 60px;
+        margin: 40px 60px 20px;
     }
     .mid-title{
         font-size: 24px;
         color: #009DDB;
         font-weight: normal;
+        margin-left: 15px;
     }
     .service-text{
-        margin: 0 40px;
+        margin: 0 40px 0 16px;
     }
+
     .coverage{
         /* display: block; */
-        margin-left: 40px;
+        margin-left: 75px;
         margin-top: 70px;
         line-height: .5;
     }
+
+    .icon img{
+        max-width: 55px;
+    }
+    .real-estate, .probate, .tax{
+        padding-top: 30px;
+    }
+    
     
     hr{
         border-top: 2px solid #009DDB;
@@ -171,51 +379,76 @@
         grid-template-areas: 
         "logo bottomname"
         "text blank"
-        "quote contact";
+        "quote contact"
+        "copy copy";
         background-image: url(./images/house.png);
         background-repeat: no-repeat;
-        background-size: 45%;
-        background-position-x: 900px;
+        background-size: 70% 115%;
+        background-position-x: 775px;
         margin: 0;
-        padding: 80px 60px 30px 20px;
+        padding: 80px 20px 0px 20px;
     }
     .bottom-name{
         color: #009DDB;
         font-size: 32px;
-        padding-top: 25px;
+        padding-top: 30px;
+        padding-left: 115px;
+        margin-left: 80px;
     }
     .logo{
-        margin-bottom: 0;
+        margin-top: 5px;
     }
 
     .text p{
-        padding: 40px 40px 0 105px;
-        width: 55%;
+        padding: 30px 40px 0 145px;
+        width: 80%;
     }
-    .contact-info{
-        line-height: 1;
-        padding-top: 25px;
-        margin-right: 110px;
-    }
+
     .footer > .quote{
-        margin-left: 65px;
-        margin-top: -65px;
-        padding-left: 40px;
+        margin-left: 85px;
+        margin-top: -60px;
+        padding-left: 60px;
+    }
+    .footer > .quote button a{
+        color: #009DDB;
+        padding-right: 40px;
+        margin-left: -20px;
+        text-align: left;
+    }
+
+    .contact-info{
+        line-height: 1.5;
+        padding-top: 25px;
+        margin-left: 125px;
+        padding-left: 70px;
+    }
+    .contact-icon img{
+        width: 6%;
+    }
+    .contact-icon p{
+        display: inline-flex;
+        padding-left: 55px;
+
+    }
+    .address{
+        margin-top: 0px;
+    }
+
+    .copy{
+        font-size: 12px;
+        text-align: center;
+        margin-left: 50px;
+        padding-top: 0px;
     }
   
-
 }
 
 /*------Outside of media queries-------*/
 a{
     cursor: pointer;
-    color: black;
 }
 a:hover{
     text-decoration: none;
-    color: #009DDB;
-}
-a:current{
     color: #009DDB;
 }
 button:hover{
@@ -256,13 +489,24 @@ button:hover{
 .bottom-name{
     grid-area: bottomname;
 }
+.copy{
+    grid-area: copy;
+}
 
 /*--top-section--*/
 .top-section{
     background-color: white;
 }
+#active{
+    color: #009DDB;
+}
 
 /*--appraisal experts--*/
 .appraisal-experts{
     background-color: #009DDB;
+}
+
+/*--footer--*/
+a{
+    color: #009DDB;
 }
