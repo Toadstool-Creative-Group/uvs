@@ -19,25 +19,6 @@
         "topbuttons topbuttons";
     }
 
-    .nav{
-        /* width: 100%; */
-        grid-column: 1/5;
-        grid-row: 1;
-    }
-    .nav-container{
-        width: 100%;
-        /* padding: 15px 40px 20px; */
-        margin-left: 0px;
-    }
-    .nav-container a{
-        color: black;
-    }
-    .nav-container li{
-        display: inline;
-        margin: 0px;
-        padding: 10px;
-    }
-
     .photo{
         grid-column: 3/5;
         grid-row: 3/5;
@@ -279,6 +260,92 @@
   
 }
 
+/*-----------------------------------------------------------------*/
+/*media query for menu*/
+@media only screen and (max-width: 1000px){
+    .menu-btn{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        /* border: 3px solid #000; */
+    }
+
+    .menu-btn_burger{
+        width: 30px;
+        height: 6px;
+        background: #009DDB;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .3s ease-in-out;
+    }
+    .menu-btn_burger::before, .menu-btn_burger::after{
+        content: '';
+        position: absolute;
+        width: 30px; 
+        height: 6px;
+        background: #009DDB;
+        border-radius: 5px; 
+        box-shadow: 0 2px 5px rgba(255, 101, 47, .2);
+        transition: all .3s ease-in-out;
+    }
+    .menu-btn_burger::before{
+        transform: translateY(-13px);
+    }
+    .menu-btn_burger::after{
+        transform: translateY(13px);
+    }
+    /*ANIMATION*/
+    .menu-btn.open .menu-btn_burger{
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+    }
+    .menu-btn.open .menu-btn_burger::before{
+        transform: rotate(45deg) translate(35px, -35px);
+    }
+    .menu-btn.open .menu-btn_burger::after{
+        transform: rotate(-45deg) translate(35px, 35px);
+    }
+
+    .nav-container{
+        width: 80%;
+    }
+    .nav-container li{
+        margin: 0;
+        padding: 5px;
+    }
+
+    ul{
+        background-color: #b0b0b0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        border: transparent;
+        border-radius: 5px;
+        margin-left: 2em;
+        padding: 10px;      
+    }
+     ul li{
+        margin: 10px;
+        font-size: 15px;
+        /* width: 100%; */
+        text-align: center;
+    }
+     ul li a{
+        display: flex;
+        color: #fff;
+        font-size: 16px;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+    }
+
+}
 
 
 
@@ -309,6 +376,10 @@
 .logo img{
     width: 450px;
     margin-left: 60px;
+}
+
+.menu-icon{
+    display: none;
 }
 
 .nav{
@@ -572,6 +643,10 @@ hr{
         display: inline;
         margin: 0 20px;
         padding: 10px;
+    }
+
+    .menu-icon{
+        display: none;
     }
 
     .intro p{
