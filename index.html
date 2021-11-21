@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 <!-------top section-------->
+<div class="menu-btn">
+    <div class="menu-btn_burger" onclick="menutoggle()"></div>
+</div>
 <div class="top-section">
     <div class="nav">
-        <ul class="nav-container">
+        <ul id="Navigation" class="nav-container">
             <li><a href="#" id="active">Home</a></li>
             <li><a href="#">About me</a></li>
             <li><a href="#">Contact</a></li>
@@ -95,6 +102,8 @@
     </div>
     <div class="copy">Copyright &copy;2021 Unterbrink Valuation Service <p>Website Created by <span style="color:#009DDB; cursor: pointer;"><a href="https://toadstoolcreative.com"target="_blank">Toadstool Creative Group</a></span></p></div>
 </div>
+
+<script src="main.js"></script>
 </body>
 </html>
 
