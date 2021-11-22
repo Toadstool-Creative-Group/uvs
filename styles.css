@@ -238,12 +238,12 @@
         padding-left: 16px;
     }
     .contact-icon img{
-        width: 8%;
+        width: 6%;
         margin-left: 10px;
     }
     .contact-icon p{
         display: inline-flex;
-        padding-left: 16px;
+        padding-left: 40px;
         font-size: 12px;
 
     }
@@ -326,8 +326,7 @@
         transition: max-height 0.5s;
         border: transparent;
         border-radius: 5px;
-        margin-left: 2em;
-        padding: 10px;      
+        margin-left: 2em;     
     }
      ul li{
         margin: 10px;
