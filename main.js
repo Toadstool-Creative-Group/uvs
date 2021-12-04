@@ -25,3 +25,11 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+
+document.getElementById('read-more-btn').addEventListener('click', function(){
+    document.querySelector('.top-modal').style.display = 'flex';
+});
+
+document.querySelector('.close').addEventListener('click', function (){
+    document.querySelector('.top-modal').style.display = 'none';
+});

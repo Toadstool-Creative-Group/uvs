@@ -25,7 +25,7 @@
     }
    
     #gary-photo{
-        width: 50%;
+        width: 90%;
         float: right;
         padding-right: 10px;
     }
@@ -47,11 +47,48 @@
         grid-column: 1/3;
         grid-row: 3/5;
     }
-    .intro p{
-        padding: 0;
-        display: none;
-    }
-
+    .intro-text{
+        padding-left: 2em;
+        margin: 0;
+      }
+      .hidden{
+          display: none;
+      }
+      #read-more-btn{
+          padding-left: 32px;
+          border: none;
+          font-size: 14px;
+          outline: none;
+          background: transparent;
+      }
+/*-----------modal section----------*/
+.top-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border-radius: none;
+    padding: 30px 20px 20px;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 25px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
     .top-buttons{
         display: inline-flex;
        justify-content: space-around;
@@ -129,7 +166,7 @@
     }
     .experts-text{
         padding: 16px;       
-        font-size: 14px;
+        font-size: 16px;
     }
 
     /*--------services/coverage areas---------*/
@@ -147,7 +184,7 @@
         margin: 10px 0px 20px;
     }
     .mid-title{
-        font-size: 14px;
+        font-size: 16px;
         color: #009DDB;
         font-weight: normal;
         margin-left: 55px;
@@ -253,8 +290,8 @@
 
     .copy{
         font-size: 10px;
-        text-align: center;
-        margin-left: 0px;
+        text-align: left;
+        margin-left: 3em;
         padding-top: 20px;
     }
   
@@ -403,6 +440,12 @@
     padding: 0 150px 0 20px;
     /* width: 100%; */
     margin-left: 45px;
+}
+#read-more-btn{
+    display: none;
+}
+.top-modal{
+    display: none;
 }
 
 .top-buttons{
@@ -652,6 +695,9 @@ hr{
         padding: 0 150px 0 50px;
         width: 70%;
         margin-left: 95px;
+    }
+    #read-more-btn{
+        display: none;
     }
 
     .top-buttons{
