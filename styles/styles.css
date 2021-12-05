@@ -75,17 +75,20 @@
 }
 .modal-content{
     width: 300px;
-    height: 300px;
+    height: 400px;
     background-color: white;
     border-radius: none;
-    padding: 30px 20px 20px;
+    padding: 30px 30px 20px;
     position: relative;
+}
+.modal-text{
+    margin-top: 20px;
 }
 .close{
     position: absolute;
     top: 0;
     right: 10px;
-    font-size: 25px;
+    font-size: 35px;
     transform: rotate(45deg);
     cursor: pointer;
 }
@@ -580,7 +583,7 @@ hr{
     background-size: 70% 100%;
     background-position-x: 540px;
     margin: 0;
-    padding: 80px 20px 0px 20px;
+    padding: 80px 20px 0px 15px;
 }
 .bottom-name{
     color: #009DDB;
@@ -631,8 +634,8 @@ hr{
 
 .copy{
     font-size: 12px;
-    text-align: center;
-    margin-left: -20px;
+    text-align: left;
+    margin-left: 60px;
     padding-top: 0px;
 }
 
@@ -675,7 +678,7 @@ hr{
     .nav-container{
         width: 100%;
         padding: 15px 40px 20px;
-        margin-left: 70px;
+        margin-left: 75px;
         margin-bottom: 65px;
     }
     .nav-container a{
@@ -828,7 +831,7 @@ hr{
         background-size: 70% 115%;
         background-position-x: 775px;
         margin: 0;
-        padding: 80px 20px 0px 20px;
+        padding: 80px 20px 0px 15px;
     }
     .bottom-name{
         color: #009DDB;
@@ -842,8 +845,8 @@ hr{
     }
 
     .text p{
-        padding: 30px 40px 0 145px;
-        width: 80%;
+        padding: 30px 20px 0 145px;
+        width: 100%;
     }
 
     .footer > .quote{
@@ -878,9 +881,9 @@ hr{
 
     .copy{
         font-size: 12px;
-        text-align: center;
-        margin-left: 50px;
-        padding-top: 0px;
+        text-align: left;
+        margin-left: 140px;
+        padding-top: 10px;
     }
   
 }
