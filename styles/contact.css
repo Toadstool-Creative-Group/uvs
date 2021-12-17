@@ -1,3 +1,4 @@
+/*----------mobile view---------*/
 @media only screen and (max-width: 799px){
 .contact-form{
     justify-content: center;
@@ -37,7 +38,7 @@ input, textarea{
 }
 
 
-/*---------tablet view---------*/
+/*------------------tablet view-----------------------*/
 @media only screen and (min-width: 1024px){
      /*------middle section------*/
      .middle-section{
@@ -164,6 +165,14 @@ input, textarea{
     border: transparent;
     border-radius: 2px;
 }
+
 ::placeholder{
     color: white;
+}
+
+#push{
+    cursor: pointer;
+    background-color: #60C4F3;
+    color: white;
+    border: transparent;
 }

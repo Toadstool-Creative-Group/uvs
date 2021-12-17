@@ -12,6 +12,7 @@
         display: grid;
         grid-template-areas: 
         "nav nav"
+        "login login"
         "logo logo"
         "intro photo"
         "blank name"
@@ -138,6 +139,26 @@
     }
     .quote button a:hover{
         color:#009DDB;
+    }
+
+    .login{
+        text-align: right;
+        padding-right: 10px;
+    }
+    .login button{
+        width: 30%;
+        border: transparent;
+        background-color: #b0b0b0;
+        color: white;
+        margin: 15px 0px;
+        padding: 12px 5px 10px 0px;
+        grid-column: 3/6;
+        grid-row: 1;
+    }
+    .login button a{
+        text-align: left;
+        margin-left: -60px;
+        padding-right: 20px;
     }
     .name{
         font-size: 24px;
@@ -394,7 +415,7 @@
    .top-section{
     display: grid;
     grid-template-areas: 
-    "nav nav nav nav photo photo"
+    "nav nav nav login photo photo"
     "logo logo logo logo photo photo"
     "intro intro intro intro photo photo"
     "topbuttons topbuttons topbuttons topbuttons photo photo"
@@ -411,6 +432,8 @@
 #gary-photo{
     width: 350px;
     float: right;
+    margin-top: 0;
+    padding-top: 20px;
 }
 .logo img{
     width: 450px;
@@ -457,7 +480,7 @@
     padding-left: 15px;
     /* width: 100%; */
 }
-.call-me button, .quote button{    
+.call-me button, .quote button, .login button{    
     font-size: 16px;
     width: 150px;
     text-align: left;
@@ -494,16 +517,38 @@
 .quote button a:hover{
     color:#009DDB;
 }
+
+.login{
+    text-align: right;
+    padding-right: 10px;
+}
+.login button{
+    border: transparent;
+    background-color: #b0b0b0;
+    color: white;
+    margin: 20px 0;
+    padding: 7px 0px 10px 40px;
+}
+.login button a{
+    color: #009DDB;
+    margin-left: -20px;
+    text-align: left;
+}
+/* .login button a:hover{
+    color:#009DDB;
+} */
+
 .name{
     font-size: 24px;
     text-align: right;
     padding-right: 10px;
-    margin-top: -40px;
+    margin-top: -50px;
     line-height: 3;
 }
 .title{
-    margin: 0;
+    margin-left: -30px;
     padding-right: 10px;
+    text-align: right;
     margin-top: -30px;
     font-size: 16px;
     color: #b0b0b0;
@@ -511,7 +556,7 @@
 
 /*-------appraisal experts section------*/
 .appraisal-experts{
-    margin: 0;
+    /* margin-top: -10px; */
     padding: 15px 120px 40px 70px ;
     color: white;
 }
@@ -649,7 +694,7 @@ hr{
     .top-section{
         display: grid;
         grid-template-areas: 
-        "nav nav nav nav photo photo"
+        "nav nav nav login photo photo"
         "logo logo logo logo photo photo"
         "intro intro intro intro photo photo"
         "topbuttons topbuttons topbuttons topbuttons photo photo"
@@ -707,9 +752,9 @@ hr{
         display: inline-flex;
         margin-left: 100px;
         padding-left: 25px;
-        width: 100%;
+        width: 90%;
     }
-    .call-me button, .quote button{    
+    .call-me button, .quote button, .login button{    
         font-size: 16px;
         width: 150px;
         text-align: left;
@@ -726,8 +771,8 @@ hr{
         color: white;
         padding-right: 20px;
     }
-    .call-me button a:hover{
-        color: white;
+    .call-me :hover{
+        background-color: #b0b0b0;
     }
     
     .quote button{
@@ -743,9 +788,29 @@ hr{
         margin-left: -20px;
         text-align: left;
     }
-    .quote button a:hover{
-        color:#009DDB;
+    /* .quote :hover{
+        background-color: #b0b0b0;
+    } */
+    .login{
+        text-align: right;
+        padding-right: 10px;
     }
+    .login button{
+        border: transparent;
+        background-color: #b0b0b0;
+        color: white;
+        margin: 20px 0;
+        padding: 7px 0px 10px 40px;
+    }
+    .login button a{
+        color: #009DDB;
+        margin-left: -20px;
+        text-align: left;
+    }
+    .login :hover{
+        background-color:#009DDB;
+    }
+
     .name{
         font-size: 32px;
         text-align: right;
@@ -754,11 +819,12 @@ hr{
         line-height: 2;
     }
     .title{
-        margin: 0;
-        padding-right: 10px;
+        /* margin-left: 50px;
+        padding-left: 50px; */
         margin-top: -30px;
         font-size: 20px;
         color: #b0b0b0;
+        text-align: right;
     }
 
     /*-------appraisal experts section------*/
@@ -903,6 +969,9 @@ button:hover{
 /*------grid areas------*/
 .nav{
     grid-area:nav;
+}
+.login{
+    grid-area: login;
 }
 .logo{
     grid-area: logo;
